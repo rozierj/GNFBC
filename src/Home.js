@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <>
       {/* ✅ Header */}
-      <header className="bg-purple-800 text-white p-8 text-center">
+      {/* <header className="bg-purple-800 text-white p-8 text-center">
         <h1 className="text-4xl font-bold">Greater New Friendship Baptist Church</h1>
         <p className="mt-2 text-xl italic">Creating Space for Greater</p>
-      </header>
+      </header> */}
 
       {/* ✅ Optional: Additional Navbar (skip if not needed) */}
    {/* <Navbar /> */}

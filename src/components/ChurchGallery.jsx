@@ -7,9 +7,10 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay';
 
 const imageFiles = [
-  '/images/Carousel/photo1.jpg',
-  '/images/Carousel/photo2.jpg'
+  `${process.env.PUBLIC_URL}/images/Carousel/photo1.jpg`,
+  `${process.env.PUBLIC_URL}/images/Carousel/photo2.jpg`
 ];
+
 
 export default function ChurchGallery() {
   return (
