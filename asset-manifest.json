@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/GNFBC/static/css/main.ba150086.css",
-    "main.js": "/GNFBC/static/js/main.88c29e56.js",
+    "main.css": "/GNFBC/static/css/main.5cf05f50.css",
+    "main.js": "/GNFBC/static/js/main.7d5e3ef0.js",
     "index.html": "/GNFBC/index.html",
-    "main.ba150086.css.map": "/GNFBC/static/css/main.ba150086.css.map",
-    "main.88c29e56.js.map": "/GNFBC/static/js/main.88c29e56.js.map"
+    "main.5cf05f50.css.map": "/GNFBC/static/css/main.5cf05f50.css.map",
+    "main.7d5e3ef0.js.map": "/GNFBC/static/js/main.7d5e3ef0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba150086.css",
-    "static/js/main.88c29e56.js"
+    "static/css/main.5cf05f50.css",
+    "static/js/main.7d5e3ef0.js"
   ]
 }
