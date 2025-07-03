@@ -9,7 +9,7 @@ import Giving from './Giving';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/GNFBC">
       <div className="font-sans bg-white text-gray-900 min-h-screen flex flex-col">
         
         {/* ✅ Navbar */}
