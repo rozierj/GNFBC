@@ -1,25 +1,30 @@
+// Navbar.js
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-purple-700 text-white">
-      <div className="px-4 max-w-6xl mx-auto text-center">
+      <div className="px-4 max-w-6xl mx-auto flex items-center justify-between py-4">
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex justify-center space-x-8 py-4">
-          <a href="#home" className="hover:text-purple-300">Home</a>
-          <a href="#about" className="hover:text-purple-300">About Us</a>
-          <a href="#pastor" className="hover:text-purple-300">Pastor’s Message</a>
-          <a href="#ministries" className="hover:text-purple-300">Ministries</a>
-          <a href="#events" className="hover:text-purple-300">Events</a>
-          <a href="#contact" className="hover:text-purple-300">Contact Us</a>
-          <a href="#giving" className="hover:text-purple-300">Online Giving</a>
-        </div>
+        {/* ✅ Logo Placeholder */}
+  <div className="flex items-center space-x-4">
+  <img
+    src={`${process.env.PUBLIC_URL}/images/logo.png`}
+    alt="Church Logo"
+    className="h-16 w-16 rounded-full bg-white p-1"
+  />
+  <div className="flex flex-col leading-tight">
+    <span className="text-2xl font-bold">Greater New Friendship Baptist Church</span>
+    <span className="text-base italic text-purple-200">Creating Space for Greater!</span>
+  </div>
+</div>
 
-        {/* Hamburger Button */}
-        <div className="flex justify-end md:hidden py-4">
+
+        {/* ✅ Hamburger Button */}
+        <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none"
@@ -49,20 +54,24 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden flex flex-col items-center space-y-4 pb-4">
-            <a href="#home" className="hover:text-purple-300">Home</a>
-            <a href="#about" className="hover:text-purple-300">About Us</a>
-            <a href="#pastor" className="hover:text-purple-300">Pastor’s Message</a>
-            <a href="#ministries" className="hover:text-purple-300">Ministries</a>
-            <a href="#events" className="hover:text-purple-300">Events</a>
-            <a href="#contact" className="hover:text-purple-300">Contact Us</a>
-            <a href="#giving" className="hover:text-purple-300">Online Giving</a>
-          </div>
-        )}
-
+        {/* ✅ Desktop Menu */}
+        <div className="hidden md:flex space-x-8">
+          <Link to="/" className="hover:underline">Home</Link>
+          <Link to="/about" className="hover:underline">About</Link>
+          <Link to="/contact" className="hover:underline">Contact</Link>
+          <Link to="/giving" className="hover:underline">Giving</Link>
+        </div>
       </div>
+
+      {/* ✅ Mobile Menu */}
+      {isOpen && (
+        <div className="px-4 pb-4 md:hidden flex flex-col space-y-2">
+          <Link to="/" className="hover:underline" onClick={() => setIsOpen(false)}>Home</Link>
+          <Link to="/about" className="hover:underline" onClick={() => setIsOpen(false)}>About</Link>
+          <Link to="/contact" className="hover:underline" onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link to="/giving" className="hover:underline" onClick={() => setIsOpen(false)}>Giving</Link>
+        </div>
+      )}
     </nav>
   );
 }
