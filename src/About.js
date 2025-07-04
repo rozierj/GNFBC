@@ -40,9 +40,14 @@ export default function About() {
             Milestones
           </h3>
           <ul className="space-y-3">
-            <li>✅ <strong>1999:</strong> First worship service in new sanctuary</li>
-            <li>✅ <strong>2005:</strong> New ministries launched</li>
-            <li>✅ <strong>2015:</strong> Third pastor installed</li>
+            <li>✅ <strong>1993:</strong> First planning meeting between Pearly and Mt. McCrae</li>
+            <li>✅ <strong>1999:</strong> First service held in the sanctuary with Rev. Daryl Moore as Pastor</li>
+            <li>✅ <strong>2006:</strong> Rev. Roger Edwards was installed as Pastor</li>
+            <li>✅ <strong>2017:</strong> Rev. Nathan Amest was installed as Pastor</li>
+            <li>✅ <strong>2022:</strong> Rev. Dr. Ernest C. Jones was installed as Pastor</li>
+            <li>✅ <strong>Present:</strong> Initiated the Thanksgiving food give-away</li>
+            <li>✅ <strong>Present:</strong> Off-site Trunk or Treat</li>
+            <li>✅ <strong>Present:</strong> Random acts of kindness in the community</li>
             <li>✅ <strong>Present:</strong> Serving together in love & harmony</li>
           </ul>
         </div>
