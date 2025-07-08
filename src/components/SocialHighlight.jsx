@@ -25,14 +25,14 @@ export default function SocialHighlight() {
       <div className="flex-1 text-left">
         <h2 className="text-2xl font-bold text-purple-800 mb-4">Watch Live on YouTube</h2>
         <div className="w-full aspect-video rounded-lg overflow-hidden shadow">
-          <iframe
-            className="w-full h-full"
-            src="https://www.youtube.com/embed/live_stream?channel=UCPYa8Mkofb9abAVS-wJKFdg&autoplay=1"
-            title="YouTube Live Stream"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          ></iframe>
+      <iframe
+        className="w-full h-full"
+        src="https://www.youtube.com/embed/RG2sw0Er8IQ?autoplay=1"
+        title="YouTube Live Stream"
+        allow="autoplay; encrypted-media"
+        allowFullScreen
+        ></iframe>
+
         </div>
         <p className="text-sm text-purple-900 mt-2">
           If we’re not live right now, check back Sunday at 11:00 a.m.!
