@@ -29,7 +29,7 @@ export default function About() {
           sanctuary on the grounds of the Pearly Chapel site. On January 3,
           1999, the first worship service was held in the newly organized
           Greater New Friendship Baptist Church located on Highway 19 South in
-          Laurens County, Georgia. Since that time, three pastors have served,
+          Laurens County, Georgia. Since that time, four pastors have served,
           new ministries have been instituted, and members continue to work and
           serve together in love and harmony.
         </p>

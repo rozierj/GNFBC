@@ -81,8 +81,10 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-4">Ministries</h2>
             <ul className="list-disc list-inside space-y-2">
               <li>
-                <strong>Youth Ministry:</strong> Guiding young people in their
-                spiritual journey.
+                <strong>Deacons Ministry:</strong> Serving the church through spiritual care and leadership.
+              </li>
+              <li>
+                <strong>Deaconess Ministry:</strong> Supporting the church through service, prayer, and compassion.
               </li>
               <li>
                 <strong>Men’s Ministry:</strong> Encouraging and equipping men
@@ -91,6 +93,30 @@ export default function Home() {
               <li>
                 <strong>Women’s Ministry:</strong> Empowering women in their
                 walk with Christ.
+              </li>
+              <li>
+                <strong>Youth Ministry:</strong> Guiding young people in 
+                their spiritual journey.
+              </li>
+              <li>
+                <strong>Technology Ministry:</strong> Enhancing worship and outreach 
+                through modern technology.
+              </li>
+              <li>
+                <strong>Security Ministry:</strong> Ensuring a safe and secure 
+                environment for all.
+              </li>
+              <li>
+                <strong>Building & Grounds Ministry:</strong> Maintaining and beautifying 
+                God’s house and grounds.
+              </li>
+              <li>
+                <strong>Culinary Ministry:</strong> Serving fellowship and hospitality 
+                through meals and events.
+              </li>
+              <li>
+                <strong>Choir Ministry:</strong> Leading the congregation in praise 
+                and worship through song.
               </li>
             </ul>
           </div>
@@ -101,10 +127,16 @@ export default function Home() {
             <img
               src={`${process.env.PUBLIC_URL}/images/pastor.jpg`}
               alt="Pastor"
-              className="w-64 h-64 my-4 mx-auto rounded-full object-cover"
+              className="w-full max-w-md my-4 mx-auto object-cover border-4 border-purple-800 rounded"
             />
             <p className="italic">
-              “I am excited to see what God has in store for our church family.”
+              “On behalf of the Greater New Friendship Baptist Church family, we want to thank you for visiting
+              our website. Here at Greater, we are intentionally creating space in our lives for God to do 
+              GREATER works in us and through us! We hope your virtual visit turns into an in-person visit. 
+              God bless you and we’ll see you soon.
+              <br />
+              <br />In His Service,
+              Pastor Ernest Jones, Lady Persephone & Kristen ”
             </p>
           </div>
         </div>
