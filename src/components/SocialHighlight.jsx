@@ -27,7 +27,8 @@ export default function SocialHighlight() {
         <div className="w-full aspect-video rounded-lg overflow-hidden shadow">
       <iframe
         className="w-full h-full"
-        src="https://www.youtube.com/embed/RG2sw0Er8IQ?autoplay=1"
+        src="https://www.youtube.com/embed/live_stream?channel=UCoytfguUe6lJ8AeWZl8owhw&autoplay=1&mute=1"
+
         title="YouTube Live Stream"
         allow="autoplay; encrypted-media"
         allowFullScreen
