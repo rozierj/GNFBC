@@ -1,6 +1,7 @@
 import React from "react";
 import ChurchGallery from './components/ChurchGallery';
 import SocialHighlight from './components/SocialHighlight';
+import SermonSnippet from "./components/sermonsnippet";
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay';
@@ -60,6 +61,13 @@ export default function Home() {
         </div>
       </section>
 
+       {/* ✅ Sermon Snippet */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <SermonSnippet />
+        </div>
+      </section>
+
       {/* ✅ Image Carousel */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4">
@@ -73,6 +81,9 @@ export default function Home() {
           <SocialHighlight />
         </div>
       </section>
+
+
+
 
       {/* ✅ Ministries & Pastor's Message */}
       <section className="bg-purple-50 py-16">
