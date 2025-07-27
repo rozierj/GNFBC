@@ -2,9 +2,19 @@ import React from 'react';
 import { FaFacebookF, FaYoutube } from 'react-icons/fa';
 
 export default function SocialHighlight() {
+  // Check if current time is Sunday between 11:00 AM and 12:30 PM
+  function isSundayBetween11And1230() {
+    const now = new Date();
+    const isSunday = now.getDay() === 0; // Sunday = 0
+    const totalMinutes = now.getHours() * 60 + now.getMinutes();
+    return isSunday && totalMinutes >= 660 && totalMinutes <= 750; // 11:00 to 12:30
+  }
+
+  const showYouTube = isSundayBetween11And1230();
+
   return (
     <div className="bg-purple-100 p-10 rounded-3xl shadow-lg max-w-6xl mx-auto my-16 flex flex-col md:flex-row md:justify-between md:items-start gap-8 md:gap-12">
-      {/* Facebook section */}
+      {/* Facebook section - always visible */}
       <div className="flex-1 text-left">
         <h2 className="text-2xl font-bold text-purple-800 mb-4">Stay Connected with Us!</h2>
         <p className="text-purple-900 mb-6">
@@ -21,32 +31,21 @@ export default function SocialHighlight() {
         </a>
       </div>
 
-      {/* YouTube Live Embed section */}
-      <div className="flex-1 text-left">
-        <h2 className="text-2xl font-bold text-purple-800 mb-4">Watch Live on YouTube</h2>
-        <div className="w-full aspect-video rounded-lg overflow-hidden shadow">
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/live_stream?channel=UCoytfguUe6lJ8AeWZl8owhw&autoplay=1&mute=1"
-
-        title="YouTube Live Stream"
-        allow="autoplay; encrypted-media"
-        allowFullScreen
-        ></iframe>
-
+      {/* YouTube Live button - only visible Sunday 11–12:30 */}
+      {showYouTube && (
+        <div className="flex-1 text-left flex flex-col justify-center items-start">
+          <h2 className="text-2xl font-bold text-purple-800 mb-4">We’re Live Now on YouTube!</h2>
+          <a
+            href="https://www.youtube.com/@greaterdublin/live"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-red-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-700 transition duration-300"
+          >
+            <FaYoutube className="w-6 h-6" />
+            Watch Live on YouTube
+          </a>
         </div>
-        <p className="text-sm text-purple-900 mt-2">
-          If we’re not live right now, check back Sunday at 11:00 a.m.!
-        </p>
-        <a
-          href="https://www.youtube.com/@greaterdublin/live"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block mt-4 text-purple-700 underline hover:text-purple-900"
-        >
-          Or click here to watch directly on YouTube
-        </a>
-      </div>
+      )}
     </div>
   );
 }
