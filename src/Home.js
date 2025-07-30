@@ -2,6 +2,7 @@ import React from "react";
 import ChurchGallery from './components/ChurchGallery';
 import SocialHighlight from './components/SocialHighlight';
 import SermonSnippet from "./components/sermonsnippet";
+import MediaGallery from "./components/MediaGallery";
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay';
@@ -9,8 +10,17 @@ import 'swiper/css/autoplay';
 export default function Home() {
   return (
     <>
+
+           {/* ✅ Sermon Snippet */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <MediaGallery />
+        </div>
+      </section>
+
+
       {/* ✅ Intro Video */}
-      <section className="bg-purple-100 py-16">
+{/*       <section className="bg-purple-100 py-16">
         <div className="max-w-6xl mx-auto text-center text-white px-4">
           <video
             src={`${process.env.PUBLIC_URL}/images/intro.mp4`}
@@ -35,31 +45,36 @@ export default function Home() {
             </p>
           </video>
         </div>
-      </section>
+      </section> */}
 
-      {/* ✅ Mission & Vision */}
-      <section className="bg-purple-50 py-16">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 text-purple-900 px-4">
-          <div className="w-full md:w-1/2">
-            <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-            <p>
-              The mission of Greater New Friendship Baptist Church is the same
-              mission Jesus gave his followers: Go therefore and make disciples
-              of all nations, baptizing them in the name of the Father and of
-              the Son and of the Holy Spirit.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2">
-            <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
-            <p>
-              The vision of Greater New Friendship Baptist Church is to create
-              a community of authentic believers and witness a city transformed
-              by the life-changing reality of the gospel, as people come to
-              know Jesus as their Lord and Savior.
-            </p>
-          </div>
-        </div>
-      </section>
+{/* ✅ Mission & Vision */}
+<section className="py-16">  {/* Removed bg-purple-50 */}
+  <div className="max-w-6xl mx-auto px-4">
+    <div className="bg-purple-100 p-10 rounded-3xl shadow-lg text-purple-900 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
+        <p>
+          The mission of Greater New Friendship Baptist Church is the same
+          mission Jesus gave his followers: Go therefore and make disciples
+          of all nations, baptizing them in the name of the Father and of
+          the Son and of the Holy Spirit.
+        </p>
+      </div>
+      <div>
+        <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
+        <p>
+          The vision of Greater New Friendship Baptist Church is to create
+          a community of authentic believers and witness a city transformed
+          by the life-changing reality of the gospel, as people come to
+          know Jesus as their Lord and Savior.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
        {/* ✅ Sermon Snippet */}
       <section className="py-16">
