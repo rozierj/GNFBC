@@ -33,7 +33,7 @@ export default function MediaGallery() {
     timeout = setTimeout(() => {
       setFade(false);
       setCurrentIndex((prevIndex) => (prevIndex + 1) % rotationMedia.length);
-    }, currentIndex === 0 ? 15000 : 8000); // longer for intro
+    }, currentIndex === 0 ? 16500 : 8000); // longer for intro
 
     return () => clearTimeout(timeout);
   }, [currentIndex]);
