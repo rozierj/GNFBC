@@ -1,6 +1,8 @@
 import React from "react";
 import ChurchGallery from './components/ChurchGallery';
 import SocialHighlight from './components/SocialHighlight';
+import SermonSnippet from "./components/sermonsnippet";
+import MediaGallery from "./components/MediaGallery";
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay';
@@ -8,8 +10,17 @@ import 'swiper/css/autoplay';
 export default function Home() {
   return (
     <>
+
+           {/* ✅ Sermon Snippet */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <MediaGallery />
+        </div>
+      </section>
+
+
       {/* ✅ Intro Video */}
-      <section className="bg-purple-100 py-16">
+{/*       <section className="bg-purple-100 py-16">
         <div className="max-w-6xl mx-auto text-center text-white px-4">
           <video
             src={`${process.env.PUBLIC_URL}/images/intro.mp4`}
@@ -34,29 +45,41 @@ export default function Home() {
             </p>
           </video>
         </div>
-      </section>
+      </section> */}
 
-      {/* ✅ Mission & Vision */}
-      <section className="bg-purple-50 py-16">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 text-purple-900 px-4">
-          <div className="w-full md:w-1/2">
-            <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-            <p>
-              The mission of Greater New Friendship Baptist Church is the same
-              mission Jesus gave his followers: Go therefore and make disciples
-              of all nations, baptizing them in the name of the Father and of
-              the Son and of the Holy Spirit.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2">
-            <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
-            <p>
-              The vision of Greater New Friendship Baptist Church is to create
-              a community of authentic believers and witness a city transformed
-              by the life-changing reality of the gospel, as people come to
-              know Jesus as their Lord and Savior.
-            </p>
-          </div>
+{/* ✅ Mission & Vision */}
+<section className="py-16">  {/* Removed bg-purple-50 */}
+  <div className="max-w-6xl mx-auto px-4">
+    <div className="bg-purple-100 p-10 rounded-3xl shadow-lg text-purple-900 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
+        <p>
+          The mission of Greater New Friendship Baptist Church is the same
+          mission Jesus gave his followers: Go therefore and make disciples
+          of all nations, baptizing them in the name of the Father and of
+          the Son and of the Holy Spirit.
+        </p>
+      </div>
+      <div>
+        <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
+        <p>
+          The vision of Greater New Friendship Baptist Church is to create
+          a community of authentic believers and witness a city transformed
+          by the life-changing reality of the gospel, as people come to
+          know Jesus as their Lord and Savior.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+       {/* ✅ Sermon Snippet */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <SermonSnippet />
         </div>
       </section>
 
@@ -74,6 +97,9 @@ export default function Home() {
         </div>
       </section>
 
+
+
+
       {/* ✅ Ministries & Pastor's Message */}
       <section className="bg-purple-50 py-16">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-purple-900 px-4">
@@ -81,8 +107,10 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-4">Ministries</h2>
             <ul className="list-disc list-inside space-y-2">
               <li>
-                <strong>Youth Ministry:</strong> Guiding young people in their
-                spiritual journey.
+                <strong>Deacons Ministry:</strong> Serving the church through spiritual care and leadership.
+              </li>
+              <li>
+                <strong>Deaconess Ministry:</strong> Supporting the church through service, prayer, and compassion.
               </li>
               <li>
                 <strong>Men’s Ministry:</strong> Encouraging and equipping men
@@ -91,6 +119,30 @@ export default function Home() {
               <li>
                 <strong>Women’s Ministry:</strong> Empowering women in their
                 walk with Christ.
+              </li>
+              <li>
+                <strong>Youth Ministry:</strong> Guiding young people in 
+                their spiritual journey.
+              </li>
+              <li>
+                <strong>Technology Ministry:</strong> Enhancing worship and outreach 
+                through modern technology.
+              </li>
+              <li>
+                <strong>Security Ministry:</strong> Ensuring a safe and secure 
+                environment for all.
+              </li>
+              <li>
+                <strong>Building & Grounds Ministry:</strong> Maintaining and beautifying 
+                God’s house and grounds.
+              </li>
+              <li>
+                <strong>Culinary Ministry:</strong> Serving fellowship and hospitality 
+                through meals and events.
+              </li>
+              <li>
+                <strong>Choir Ministry:</strong> Leading the congregation in praise 
+                and worship through song.
               </li>
             </ul>
           </div>
@@ -101,10 +153,16 @@ export default function Home() {
             <img
               src={`${process.env.PUBLIC_URL}/images/pastor.jpg`}
               alt="Pastor"
-              className="w-64 h-64 my-4 mx-auto rounded-full object-cover"
+              className="w-full max-w-md my-4 mx-auto object-cover border-4 border-purple-800 rounded"
             />
             <p className="italic">
-              “I am excited to see what God has in store for our church family.”
+              “On behalf of the Greater New Friendship Baptist Church family, we want to thank you for visiting
+              our website. Here at Greater, we are intentionally creating space in our lives for God to do 
+              GREATER works in us and through us! We hope your virtual visit turns into an in-person visit. 
+              God bless you and we’ll see you soon.
+              <br />
+              <br />In His Service,
+              Pastor Ernest Jones, Lady Persephone & Kristen ”
             </p>
           </div>
         </div>
