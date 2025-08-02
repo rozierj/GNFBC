@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/GNFBC/static/css/main.0c0fd89d.css",
-    "main.js": "/GNFBC/static/js/main.bcc4fc97.js",
+    "main.css": "/GNFBC/static/css/main.4f792bb8.css",
+    "main.js": "/GNFBC/static/js/main.bcf0127e.js",
     "static/media/IMG_4587.jpg": "/GNFBC/static/media/IMG_4587.25267cffadc58b45df78.jpg",
     "static/media/IMG_4543.jpg": "/GNFBC/static/media/IMG_4543.f12df0cebcb82d00e50a.jpg",
     "static/media/IMG_4516.jpg": "/GNFBC/static/media/IMG_4516.d963a74d7effac9defcb.jpg",
@@ -18,11 +18,11 @@
     "static/media/497484185_697355039329981__n.jpg": "/GNFBC/static/media/497484185_697355039329981_8192095239964985979_n.99433cfb75850eecaf77.jpg",
     "static/media/484037068_656521620079990__n.jpg": "/GNFBC/static/media/484037068_656521620079990_7272227079390343534_n.a52d8ad67b33db2ded6f.jpg",
     "index.html": "/GNFBC/index.html",
-    "main.0c0fd89d.css.map": "/GNFBC/static/css/main.0c0fd89d.css.map",
-    "main.bcc4fc97.js.map": "/GNFBC/static/js/main.bcc4fc97.js.map"
+    "main.4f792bb8.css.map": "/GNFBC/static/css/main.4f792bb8.css.map",
+    "main.bcf0127e.js.map": "/GNFBC/static/js/main.bcf0127e.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c0fd89d.css",
-    "static/js/main.bcc4fc97.js"
+    "static/css/main.4f792bb8.css",
+    "static/js/main.bcf0127e.js"
   ]
 }
