@@ -50,7 +50,7 @@ function AppContent() {
 
 export default function App() {
   return (
-    <Router basename="/GNFBC">
+    // <Router basename="/GNFBC">
       <AppContent />
     </Router>
   );

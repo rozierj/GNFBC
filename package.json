@@ -2,7 +2,7 @@
   "name": "gnfbc-tailwind-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rozierj.github.io/GNFBC",
+  "homepage": "https://greaterdublin.org",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
