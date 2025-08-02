@@ -2,7 +2,7 @@
   "name": "gnfbc-tailwind-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://greaterdublin.org",
+  "homepage": "https://www.greaterdublin.org",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -14,16 +14,9 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-ga4": "^2.1.0",
-    "react-icons": "^5.5.0",
     "react-responsive-carousel": "^3.2.23",
-    "react-router": "6.23.1",
-    "react-router-dom": "6.23.1",
     "react-scripts": "5.0.1",
-    "swiper": "8.4.7"
-  },
-  "overrides": {
-    "swiper": "8.4.7"
+    "swiper": "^11.2.8"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
