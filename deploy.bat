@@ -1,6 +1,12 @@
 @echo off
 setlocal
 
+REM === Ensure CNAME exists in public folder ===
+if not exist public (
+  mkdir public
+)
+echo www.greaterdublin.org > public\CNAME
+
 echo === Backing up current package.json...
 if not exist package.json (
   echo ❌ ERROR: package.json not found.
@@ -48,6 +54,6 @@ del package.dev.json
 
 echo.
 echo ✅ Deployment complete!
-echo Visit: https://rozierj.github.io/GNFBC/
+echo Visit: https://www.greaterdublin.org
 
 pause

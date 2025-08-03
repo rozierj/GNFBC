@@ -1,6 +1,7 @@
 // Navbar.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { trackNavClick } from './analytics';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,19 +10,18 @@ export default function Navbar() {
     <nav className="bg-purple-700 text-white">
       <div className="px-4 max-w-6xl mx-auto flex items-center justify-between py-4">
 
-        {/* ✅ Logo Placeholder */}
-  <div className="flex items-center space-x-4">
-  <img
-    src={`${process.env.PUBLIC_URL}/images/logo.png`}
-    alt="Church Logo"
-    className="h-16 w-16 rounded-full bg-white p-1"
-  />
-  <div className="flex flex-col leading-tight">
-    <span className="text-2xl font-bold">Greater New Friendship Baptist Church</span>
-    <span className="text-base italic text-purple-200">Creating Space for Greater!</span>
-  </div>
-</div>
-
+        {/* ✅ Logo */}
+        <div className="flex items-center space-x-4">
+          <img
+            src={`${process.env.PUBLIC_URL}/images/logo.png`}
+            alt="Church Logo"
+            className="h-16 w-16 rounded-full bg-white p-1"
+          />
+          <div className="flex flex-col leading-tight">
+            <span className="text-2xl font-bold">Greater New Friendship Baptist Church</span>
+            <span className="text-base italic text-purple-200">Creating Space for Greater!</span>
+          </div>
+        </div>
 
         {/* ✅ Hamburger Button */}
         <div className="md:hidden">
@@ -55,21 +55,21 @@ export default function Navbar() {
         </div>
 
         {/* ✅ Desktop Menu */}
-        <div className="hidden md:flex space-x-8">
-          <Link to="/" className="hover:underline">Home</Link>
-          <Link to="/about" className="hover:underline">About</Link>
-          <Link to="/contact" className="hover:underline">Contact</Link>
-          <Link to="/giving" className="hover:underline">Giving</Link>
+        <div className="hidden md:flex space-x-8 items-center">
+          <Link to="/" className="hover:underline transition duration-200" onClick={() => trackNavClick("Home")}>Home</Link>
+          <Link to="/about" className="hover:underline transition duration-200" onClick={() => trackNavClick("About")}>About</Link>
+          <Link to="/contact" className="hover:underline transition duration-200" onClick={() => trackNavClick("Contact")}>Contact</Link>
+          <Link to="/giving" className="hover:underline transition duration-200" onClick={() => trackNavClick("Giving")}>Giving</Link>
         </div>
       </div>
 
       {/* ✅ Mobile Menu */}
       {isOpen && (
         <div className="px-4 pb-4 md:hidden flex flex-col space-y-2">
-          <Link to="/" className="hover:underline" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="/about" className="hover:underline" onClick={() => setIsOpen(false)}>About</Link>
-          <Link to="/contact" className="hover:underline" onClick={() => setIsOpen(false)}>Contact</Link>
-          <Link to="/giving" className="hover:underline" onClick={() => setIsOpen(false)}>Giving</Link>
+          <Link to="/" className="hover:underline transition duration-200" onClick={() => { setIsOpen(false); trackNavClick("Home"); }}>Home</Link>
+          <Link to="/about" className="hover:underline transition duration-200" onClick={() => { setIsOpen(false); trackNavClick("About"); }}>About</Link>
+          <Link to="/contact" className="hover:underline transition duration-200" onClick={() => { setIsOpen(false); trackNavClick("Contact"); }}>Contact</Link>
+          <Link to="/giving" className="hover:underline transition duration-200" onClick={() => { setIsOpen(false); trackNavClick("Giving"); }}>Giving</Link>
         </div>
       )}
     </nav>
