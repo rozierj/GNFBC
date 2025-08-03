@@ -15,14 +15,14 @@ export default function Giving() {
       <h1 className="text-4xl text-center my-8">Online Giving</h1>
 
       {/* ✅ Trackable Give Now button */}
-      <div className="text-center mb-6">
+      {/* <div className="text-center mb-6">
         <button
           onClick={handleGiveClick}
           className="bg-purple-700 hover:bg-purple-800 text-white px-6 py-3 rounded-lg font-bold"
         >
           Give Now
         </button>
-      </div>
+      </div> */}
 
       <div className="flex-grow">
         <iframe
