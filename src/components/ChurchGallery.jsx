@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade } from 'swiper/modules';
+import { Autoplay, EffectFade } from 'swiper'; // ✅ Swiper 8 syntax
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -24,17 +24,15 @@ export default function ChurchGallery() {
           speed={1000}
         >
           {imageFiles.map((src, index) => (
-<SwiperSlide key={index}>
-  <div className="w-full flex justify-center items-center bg-white">
-    <img
-      src={src}
-      alt={`Slide ${index + 1}`}
-      className="w-full h-auto max-h-[500px] object-contain"
-    />
-  </div>
-</SwiperSlide>
-
-
+            <SwiperSlide key={index}>
+              <div className="w-full flex justify-center items-center bg-white">
+                <img
+                  src={src}
+                  alt={`Slide ${index + 1}`}
+                  className="w-full h-auto max-h-[500px] object-contain"
+                />
+              </div>
+            </SwiperSlide>
           ))}
         </Swiper>
       </div>
