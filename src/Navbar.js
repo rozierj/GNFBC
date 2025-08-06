@@ -60,6 +60,15 @@ export default function Navbar() {
           <Link to="/about" className="hover:underline transition duration-200" onClick={() => trackNavClick("About")}>About</Link>
           <Link to="/contact" className="hover:underline transition duration-200" onClick={() => trackNavClick("Contact")}>Contact</Link>
           <Link to="/giving" className="hover:underline transition duration-200" onClick={() => trackNavClick("Giving")}>Giving</Link>
+          <Link
+  to="/calendar"
+  className="hover:underline transition duration-200"
+  onClick={() => trackNavClick("Calendar")}
+>
+  Calendar
+</Link>
+
+ 
         </div>
       </div>
 
@@ -70,6 +79,15 @@ export default function Navbar() {
           <Link to="/about" className="hover:underline transition duration-200" onClick={() => { setIsOpen(false); trackNavClick("About"); }}>About</Link>
           <Link to="/contact" className="hover:underline transition duration-200" onClick={() => { setIsOpen(false); trackNavClick("Contact"); }}>Contact</Link>
           <Link to="/giving" className="hover:underline transition duration-200" onClick={() => { setIsOpen(false); trackNavClick("Giving"); }}>Giving</Link>
+          <Link to="/calendar"className="hover:underline transition duration-200"
+  onClick={() => {
+    setIsOpen(false);
+    trackNavClick("Calendar");
+  }}
+>
+  Calendar
+</Link>
+
         </div>
       )}
     </nav>

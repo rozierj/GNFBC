@@ -6,6 +6,7 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Giving from './Giving';
+import Calendar from './Calendar';
 import ReactGA from "react-ga4";
 import { trackEvent } from './analytics';
 import { FaYoutube, FaFacebook, FaDonate } from "react-icons/fa";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/giving" element={<Giving />} />
+          <Route path="/calendar" element={<Calendar />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
