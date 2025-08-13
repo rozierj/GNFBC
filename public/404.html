@@ -5,21 +5,18 @@
     <title>Redirecting…</title>
     <script>
       (function () {
-        // Preserve domain + protocol
+        // If this 404 page is shown (because /about, /contact, etc. doesn't exist on the server),
+        // redirect to "/" but carry the original path in ?p= so the SPA can restore it.
         var l = window.location;
-
-        // Keep the original client route (/about, /contact, etc.)
-        // Normalize any leading slashes
-        var path = l.pathname.replace(/^\/+/, "");
-
-        // Reconstruct a full absolute URL on the SAME origin
-        var target = l.origin + "/" + path + l.search + l.hash;
-
-        // Send the browser to index.html on the same origin, *but* with the original path
-        // so React Router can render the correct route.
-        window.location.replace(target);
+        // Only do this if we weren't already redirected here with ?p=
+        if (!/[?&]p=/.test(l.search)) {
+          var original = l.pathname + l.search + l.hash;
+          var target = l.origin + "/?p=" + encodeURIComponent(original);
+          l.replace(target);
+        }
       })();
     </script>
+    <noscript><meta http-equiv="refresh" content="0; url=/" /></noscript>
   </head>
   <body></body>
 </html>

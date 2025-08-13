@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+  (function () {
+    // If we arrived at "/" with ?p=/about (from 404.html), restore the clean path
+    var params = new URLSearchParams(window.location.search);
+    var p = params.get("p");
+    if (p) {
+      // Normalize to an absolute path on the same origin
+      var a = document.createElement("a");
+      a.href = p;
+      var path = a.pathname.replace(/^\/+/, ""); // remove extra leading slashes
+      var search = a.search || "";
+      var hash = a.hash || "";
+      var finalUrl = "/" + path + search + hash;
+
+      // Replace the address bar URL without reloading, then let React Router handle it
+      window.history.replaceState(null, "", finalUrl);
+    }
+  })();
+</script>
+
+
   <meta charset="UTF-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
