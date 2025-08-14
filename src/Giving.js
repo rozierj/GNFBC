@@ -1,5 +1,7 @@
 import React from 'react';
 import { trackEvent } from './analytics';
+// ✅ ADDED
+import { Helmet } from 'react-helmet-async';
 
 export default function Giving() {
   const handleGiveClick = () => {
@@ -12,6 +14,13 @@ export default function Giving() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* ✅ ADDED canonical + title/description */}
+      <Helmet>
+        <title>Giving | Greater New Friendship</title>
+        <meta name="description" content="Give online to support the ministry at Greater New Friendship Baptist Church." />
+        <link rel="canonical" href="https://www.greaterdublin.org/giving" />
+      </Helmet>
+
       <h1 className="text-4xl text-center my-8">Online Giving</h1>
 
       {/* ✅ Trackable Give Now button */}

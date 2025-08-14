@@ -1,10 +1,19 @@
 // About.js
 import React from "react";
 import { Link } from "react-router-dom";
+// ✅ ADDED
+import { Helmet } from "react-helmet-async";
 
 export default function About() {
   return (
     <main className="font-sans bg-white text-gray-900 flex flex-col min-h-screen">
+      {/* ✅ ADDED canonical + title/description */}
+      <Helmet>
+        <title>About | Greater New Friendship</title>
+        <meta name="description" content="Learn about the history and mission of Greater New Friendship Baptist Church." />
+        <link rel="canonical" href="https://www.greaterdublin.org/about" />
+      </Helmet>
+
       <section className="bg-purple-50 p-10 rounded-3xl shadow-lg max-w-5xl mx-auto my-16 text-purple-900 text-center px-4">
         {/* ✅ Heading & Subheading */}
         <h2 className="text-3xl font-bold mb-2 text-purple-800">Our Story</h2>

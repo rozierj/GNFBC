@@ -7,9 +7,18 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay';
 
+// ✅ ADDED
+import { Helmet } from "react-helmet-async";
+
 export default function Home() {
   return (
     <>
+      {/* ✅ ADDED canonical + title/description */}
+      <Helmet>
+        <title>Greater New Friendship | Creating Space for Greater</title>
+        <meta name="description" content="Greater New Friendship Baptist Church — worship with us in Dublin, GA." />
+        <link rel="canonical" href="https://www.greaterdublin.org/" />
+      </Helmet>
 
            {/* ✅ Sermon Snippet */}
       <section className="py-16">
@@ -17,7 +26,6 @@ export default function Home() {
           <MediaGallery />
         </div>
       </section>
-
 
       {/* ✅ Intro Video */}
 {/*       <section className="bg-purple-100 py-16">
@@ -73,9 +81,6 @@ export default function Home() {
   </div>
 </section>
 
-
-
-
        {/* ✅ Sermon Snippet */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4">
@@ -96,9 +101,6 @@ export default function Home() {
           <SocialHighlight />
         </div>
       </section>
-
-
-
 
       {/* ✅ Ministries & Pastor's Message */}
       <section className="bg-purple-50 py-16">

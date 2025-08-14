@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+// ✅ ADDED
+import { Helmet } from "react-helmet-async";
 
 export default function Contact() {
   const [status, setStatus] = useState("Submit");
@@ -32,6 +34,13 @@ export default function Contact() {
 
   return (
     <div className="p-8 max-w-xl mx-auto">
+      {/* ✅ ADDED canonical + title/description */}
+      <Helmet>
+        <title>Contact | Greater New Friendship</title>
+        <meta name="description" content="Contact Greater New Friendship Baptist Church in Dublin, GA." />
+        <link rel="canonical" href="https://www.greaterdublin.org/contact" />
+      </Helmet>
+
       <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
       <p className="mb-6">We’d love to hear from you! Fill out the form below and we’ll get back to you soon.</p>
 

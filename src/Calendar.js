@@ -1,8 +1,17 @@
 import React from 'react';
+// ✅ ADDED
+import { Helmet } from 'react-helmet-async';
 
 export default function CalendarPage() {
   return (
     <div className="min-h-screen flex flex-col items-center px-4">
+      {/* ✅ ADDED canonical + title/description */}
+      <Helmet>
+        <title>Calendar | Greater New Friendship</title>
+        <meta name="description" content="See upcoming events at Greater New Friendship Baptist Church." />
+        <link rel="canonical" href="https://www.greaterdublin.org/calendar" />
+      </Helmet>
+
       <h1 className="text-4xl text-center my-8">Church Events Calendar</h1>
 
       <div className="w-full max-w-6xl">
