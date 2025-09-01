@@ -123,8 +123,7 @@ export default function Home() {
                 walk with Christ.
               </li>
               <li>
-                <strong>Youth Ministry:</strong> Guiding young people in 
-                their spiritual journey.
+                <strong>Youth Ministry:</strong> To provide a ministry that gives youth an opportunity for both spiritual and social development.
               </li>
               <li>
                 <strong>Technology Ministry:</strong> Enhancing worship and outreach 

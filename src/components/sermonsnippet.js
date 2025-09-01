@@ -1,7 +1,7 @@
 import React from "react";
 
 const sermonData = {
-  title: "June 2025 Sermon Clip",
+  title: "Greater New Friendship Sermon Clip",
   youtubeURL: "https://www.youtube.com/watch?v=_9Vr9nOrmhQ",
   startSeconds: 2282,
   endSeconds: 2406,
