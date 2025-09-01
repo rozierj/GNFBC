@@ -10,7 +10,7 @@ const importAll = (r) =>
   }));
 
 const allMedia = importAll(
-  require.context('../assets/media', false, /\.(mp4|webm|jpg|jpeg|png|gif)$/)
+  require.context('../assets/media', false, /\.(mp4|webm|jpg|jpeg|png|gif)$/i)
 );
 
 // Identify intro video and fallback image
