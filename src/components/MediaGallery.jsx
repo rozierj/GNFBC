@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import "./MediaGallery.css"; // Custom styles for transitions
 
@@ -51,14 +50,15 @@ export default function MediaGallery() {
         muted
         loop
         playsInline
-        className="w-full h-full object-contain"
+        className="w-full h-full object-contain bg-black" // keep black only for video
         poster={currentIndex === 0 && fallbackImage ? fallbackImage.src : ""}
       />
     ) : (
       <img
         src={currentFile.src}
         alt={`media-${currentIndex}`}
-        className="w-full h-full object-contain"
+        className="w-full h-full object-contain bg-purple-50" // blend into section background
+        loading="lazy"
       />
     );
   };
@@ -69,7 +69,7 @@ export default function MediaGallery() {
       <div className="w-full mx-auto rounded-xl max-w-4xl relative pb-[28.125%]">
         {/* Half of 56.25% padding (16:9) */}
         <div className={`transition-opacity duration-1000 ${fade ? "opacity-100" : "opacity-0"}`}>
-          <div className="absolute inset-0 w-full h-full rounded-xl shadow-lg flex items-center justify-center bg-black">
+          <div className="absolute inset-0 w-full h-full rounded-xl shadow-lg flex items-center justify-center">
             {renderMedia()}
           </div>
         </div>
