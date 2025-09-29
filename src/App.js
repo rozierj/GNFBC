@@ -39,39 +39,86 @@ function App() {
         </Routes>
       </div>
 
-      {/* ✅ Footer with GA4 tracking + icons */}
-      <footer className="bg-purple-800 text-white text-center p-4">
-        <div className="mb-2">
-          &copy; {new Date().getFullYear()} Greater New Friendship Baptist Church. All rights reserved.
+      {/* ✅ Expanded footer with full contact block */}
+      <footer className="bg-purple-900 text-white">
+        <div className="max-w-6xl mx-auto px-4 py-10 grid gap-8 md:grid-cols-3">
+          <div>
+            <h3 className="text-lg font-semibold mb-2">Greater New Friendship</h3>
+            <p className="text-purple-200">
+              Creating Space for Greater — Worship with us in Dublin, GA.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-2">Visit Us</h4>
+            <address className="not-italic text-purple-100">
+              3265 Hwy 19S<br />
+              Dublin, GA 31021
+            </address>
+            <a
+              className="inline-block mt-2 underline"
+              href="https://www.google.com/maps/search/?api=1&query=3265%20Hwy%2019S%20Dublin%2C%20GA%2031021"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => handleOutboundClick("Footer - Directions", "https://www.google.com/maps/search/?api=1&query=3265%20Hwy%2019S%20Dublin%2C%20GA%2031021")}
+            >
+              Get Directions ↗
+            </a>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-2">Contact</h4>
+            <ul className="space-y-1">
+              <li>
+                <a
+                  href="mailto:gnfbc.info@gmail.com"
+                  className="underline"
+                  onClick={() => handleOutboundClick("Footer - Email", "mailto:gnfbc.info@gmail.com")}
+                >
+                  gnfbc.info@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+14784633746"
+                  className="underline"
+                  onClick={() => handleOutboundClick("Footer - Phone", "tel:+14784633746")}
+                >
+                  (478) 463-3746
+                </a>
+              </li>
+              
+            </ul>
+
+            {/* Social/Giving row */}
+            <div className="mt-4 flex flex-wrap gap-4">
+              <button
+                onClick={() => handleOutboundClick("Online Giving", "https://subsplash.com/u/-8CS9C9/give")}
+                className="flex items-center gap-2 bg-purple-700 hover:bg-purple-600 px-4 py-2 rounded"
+              >
+                <FaDonate />
+                <span>Give Now</span>
+              </button>
+              <button
+                onClick={() => handleOutboundClick("YouTube", "https://www.youtube.com/@greaterdublin")}
+                className="flex items-center gap-2 bg-purple-700 hover:bg-purple-600 px-4 py-2 rounded"
+              >
+                <FaYoutube />
+                <span>YouTube</span>
+              </button>
+              <button
+                onClick={() => handleOutboundClick("Facebook", "https://www.facebook.com/greaterdublin")}
+                className="flex items-center gap-2 bg-purple-700 hover:bg-purple-600 px-4 py-2 rounded"
+              >
+                <FaFacebook />
+                <span>Facebook</span>
+              </button>
+            </div>
+          </div>
         </div>
 
-        <div className="flex justify-center space-x-8 items-center">
-          {/* Giving */}
-          <button
-            onClick={() => handleOutboundClick("Online Giving", "https://subsplash.com/u/-8CS9C9/give")}
-            className="flex items-center space-x-2 hover:underline transition duration-200"
-          >
-            <FaDonate />
-            <span>Give Now</span>
-          </button>
-
-          {/* YouTube */}
-          <button
-            onClick={() => handleOutboundClick("YouTube", "https://www.youtube.com/@greaterdublin")}
-            className="flex items-center space-x-2 hover:underline transition duration-200"
-          >
-            <FaYoutube />
-            <span>YouTube</span>
-          </button>
-
-          {/* Facebook */}
-          <button
-            onClick={() => handleOutboundClick("Facebook", "https://www.facebook.com/greaterdublin")}
-            className="flex items-center space-x-2 hover:underline transition duration-200"
-          >
-            <FaFacebook />
-            <span>Facebook</span>
-          </button>
+        <div className="bg-purple-950 text-center text-sm py-3">
+          &copy; {new Date().getFullYear()} Greater New Friendship Baptist Church. All rights reserved.
         </div>
       </footer>
     </div>

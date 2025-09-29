@@ -6,17 +6,44 @@ import './index.css';
 import App from './App';
 import ReactGA from "react-ga4";
 
-// ✅ ADDED: HelmetProvider
-import { HelmetProvider } from 'react-helmet-async';
+// ✅ HelmetProvider for SEO + safe head injection
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
-const TRACKING_ID = "G-ENXXWPDTY0"; // Replace with your GA4 Measurement ID
-ReactGA.initialize(TRACKING_ID); // ✅ Initialize GA4 once here
+const TRACKING_ID = "G-ENXXWPDTY0"; // GA4 Measurement ID
+ReactGA.initialize(TRACKING_ID);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* ✅ ADDED: Wrap app so pages can inject <Helmet> */}
     <HelmetProvider>
+      {/* ✅ Add JSON-LD with obfuscated contact info */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Greater New Friendship Baptist Church",
+            "url": "https://www.greaterdublin.org",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "3265 Hwy 19S",
+              "addressLocality": "Dublin",
+              "addressRegion": "GA",
+              "postalCode": "31021",
+              "addressCountry": "US"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "(478) 463-3746",
+                "contactType": "customer service",
+                "email": "gnfbc.info\u0040gmail.com" // obfuscated @
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
+
       <BrowserRouter basename="/">
         <App />
       </BrowserRouter>
