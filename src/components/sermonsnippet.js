@@ -2,9 +2,9 @@ import React from "react";
 
 const sermonData = {
   title: "Greater New Friendship Sermon Clip",
-  youtubeURL: "https://www.youtube.com/watch?v=_9Vr9nOrmhQ",
-  startSeconds: 2282,
-  endSeconds: 2406,
+  youtubeURL: "https://www.youtube.com/watch?v=z-9xt2wLxvs",
+  startSeconds: 4378,
+  endSeconds: 4546,
 };
 
 function extractVideoId(url) {
