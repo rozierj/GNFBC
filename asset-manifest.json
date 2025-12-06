@@ -1,44 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.250b3384.css",
-    "main.js": "/static/js/main.71643ef3.js",
-    "static/media/2Lunch2.jpg": "/static/media/2Lunch2.7c4f75b1ad9f5f95b430.jpg",
-    "static/media/2Lunch1.jpg": "/static/media/2Lunch1.6bab6229dbb5fd2e75f5.jpg",
+    "main.js": "/static/js/main.8f3b327a.js",
     "static/media/2Lunch3.jpg": "/static/media/2Lunch3.dfa375f8d894b92f5b57.jpg",
-    "static/media/1Jersey8.jpg": "/static/media/1Jersey8.27669e46bc4d109ebcfe.jpg",
-    "static/media/1Jersey5.jpg": "/static/media/1Jersey5.964a645ab032d3ad71a5.jpg",
-    "static/media/1Jersey3.jpg": "/static/media/1Jersey3.3394d2e47f23a071bd0c.jpg",
-    "static/media/1Jersey7.jpg": "/static/media/1Jersey7.ac74a4751f926081bb3a.jpg",
+    "static/media/0IMG_5006.JPG": "/static/media/0IMG_5006.44061208f38872493704.JPG",
     "static/media/3Lit3.jpg": "/static/media/3Lit3.25267cffadc58b45df78.jpg",
-    "static/media/1Jersey4.jpg": "/static/media/1Jersey4.2b744e469e79ee10a9d0.jpg",
-    "static/media/1Jersey9.jpg": "/static/media/1Jersey9.f797b51daaa5f1861dfb.jpg",
-    "static/media/1Jersey1.jpg": "/static/media/1Jersey1.bc097c843a0bff9b9613.jpg",
+    "static/media/5IMG_4733.JPG": "/static/media/5IMG_4733.42de55551209b2a781af.JPG",
     "static/media/3Lit2.jpg": "/static/media/3Lit2.f12df0cebcb82d00e50a.jpg",
     "static/media/3Lit1.jpg": "/static/media/3Lit1.d963a74d7effac9defcb.jpg",
+    "static/media/4IMG_4317.JPG": "/static/media/4IMG_4317.fff017205dbe7e3b6e12.JPG",
     "static/media/intro.mp4": "/static/media/intro.7a654ec7c791f1620391.mp4",
-    "static/media/1Jersey2.jpg": "/static/media/1Jersey2.3e0921887682459a6519.jpg",
-    "static/media/1Jersey6.jpg": "/static/media/1Jersey6.3e8ece8dc01e20414c97.jpg",
-    "static/media/505403895_717033370695481__n.jpg": "/static/media/505403895_717033370695481_4909839818695171123_n.c22ee8bbc6d45ba2eda6.jpg",
-    "static/media/487956624_666500412415444__n.jpg": "/static/media/487956624_666500412415444_975047107752154789_n.8465f8ddb13a6ab2dc94.jpg",
-    "static/media/495820406_697355105996641__n.jpg": "/static/media/495820406_697355105996641_766529573373749387_n.b0565c6d0daa7f415dc2.jpg",
-    "static/media/505435931_717032964028855__n.jpg": "/static/media/505435931_717032964028855_6712344903204634218_n.895f089d6ca72310e3af.jpg",
-    "static/media/495624346_697354752663343__n.jpg": "/static/media/495624346_697354752663343_648453570229991072_n.c3e3236e769d7b9dd965.jpg",
-    "static/media/497484185_697355039329981__n.jpg": "/static/media/497484185_697355039329981_8192095239964985979_n.99433cfb75850eecaf77.jpg",
-    "static/media/484037068_656521620079990__n.jpg": "/static/media/484037068_656521620079990_7272227079390343534_n.a52d8ad67b33db2ded6f.jpg",
-    "static/media/1Jersey11.jpg": "/static/media/1Jersey11.da471daf89e39caddacc.jpg",
-    "static/media/1Jersey13.jpg": "/static/media/1Jersey13.da4dc777956073c773a0.jpg",
-    "static/media/1Jersey12.jpg": "/static/media/1Jersey12.e27533365012bdfef384.jpg",
-    "static/media/1Jersey15.jpg": "/static/media/1Jersey15.6463d5d15553c2c77a30.jpg",
-    "static/media/1Jersey14.jpg": "/static/media/1Jersey14.3717dab362ac311a5403.jpg",
-    "static/media/1Jersey10.jpg": "/static/media/1Jersey10.9d8f36580aef5d9067a6.jpg",
-    "static/media/1Jersey17.jpg": "/static/media/1Jersey17.2af90420dab9196f38c8.jpg",
-    "static/media/1Jersey16.jpg": "/static/media/1Jersey16.c114f2c4798c815aea5b.jpg",
+    "static/media/0IMG_4966.JPG": "/static/media/0IMG_4966.04f71dfde1b26df96544.JPG",
+    "static/media/1IMG_4835.JPG": "/static/media/1IMG_4835.598ef8ccb21f0ffc0684.JPG",
+    "static/media/1IMG_4845.JPG": "/static/media/1IMG_4845.ecdae4f9c162eca81947.JPG",
     "index.html": "/index.html",
     "main.250b3384.css.map": "/static/css/main.250b3384.css.map",
-    "main.71643ef3.js.map": "/static/js/main.71643ef3.js.map"
+    "main.8f3b327a.js.map": "/static/js/main.8f3b327a.js.map"
   },
   "entrypoints": [
     "static/css/main.250b3384.css",
-    "static/js/main.71643ef3.js"
+    "static/js/main.8f3b327a.js"
   ]
 }
